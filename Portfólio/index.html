@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Clara Poppi Silva - Desenvolvedor Web</title>
+    <style>
+        body { background-color: #e6e2f0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ana Clara Poppi Silva - Desenvolvedor Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <img src="assets/perfil.jpg" alt="Foto de perfil" width="150" height="150">
+            <p>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> no SENAI.</p>
+            <p>Tenho conhecimento em <em>HTML</em>, <em>CSS</em> e estou aprendendo <em>JavaScript</em>.</p>
+
+            <h3>Minhas Habilidades:</h3>
+            <ul>
+                <li>HTML5 Semântico</li>
+                <li>CSS3 e Responsividade</li>
+                <li>Formulários e Validação</li>
+                <li>Estruturação de Dados</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Tecnologias</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Itaú</td>
+                        <td>HTML, JavaScript</td>
+                        <td>Concluído</td>
+                        <td><a href="https://github.com/anaclarapoppi/Itau" target="_blank">Ver Projeto</a></td>
+                    </tr>
+                    <tr>
+                        <td>Loja de Games Retro</td>
+                        <td>HTML, JavaScript</td>
+                        <td>Concluído</td>
+                        <td><a href="https://github.com/anaclarapoppi/Mini-Desafio-HTML---Loja-de-Games-Retro-" target="_blank">Ver Projeto</a></td>
+                    </tr>
+                    <tr>
+                        <td>Projeto Filme</td>
+                        <td>HTML, JavaScript</td>
+                        <td>Concluído</td>
+                        <td><a href="https://github.com/anaclarapoppi/projeto-filme" target="_blank">Ver Projeto</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form action="processar.php" method="post">
+                <fieldset>
+                    <legend>Dados do Contato</legend>
+
+                    <p>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="assunto">Assunto:</label><br>
+                        <select id="assunto" name="assunto">
+                            <option value="oportunidade">Oportunidade de Trabalho</option>
+                            <option value="projeto">Proposta de Projeto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+                    </p>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Ana Clara Poppi Silva. Desenvolvido durante o curso do SENAI.</p>
+        <address>
+            <a href="mailto:anapoppi9@gmail.com">anapoppi9@gmail.com</a> |
+            <a href="tel:+5511937644365">(11) 93764-4365</a>
+        </address>
+    </footer>
+
+</body>
+</html>
